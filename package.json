@@ -1,0 +1,17 @@
+{
+  "name": "nim-browser",
+  "private": true,
+  "scripts": {
+    "setup": "geckokit setup",
+    "build": "geckokit build",
+    "build:fast": "geckokit build faster",
+    "start": "geckokit run",
+    "verify": "geckokit verify",
+    "export": "geckokit export",
+    "import": "geckokit import",
+    "package": "geckokit package"
+  },
+  "devDependencies": {
+    "geckokit": "0.1.0"
+  }
+}

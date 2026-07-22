@@ -1,0 +1,36 @@
+{
+  "browser": {
+    "name": "Nim Browser",
+    "binaryName": "nim-browser",
+    "vendor": "Nim Browser",
+    "applicationId": "dev.theoslater.nim-browser"
+  },
+  "firefox": {
+    "channel": "release",
+    "version": "latest"
+  },
+  "branding": {
+    "enabled": true,
+    "directory": "branding"
+  },
+  "patches": {
+    "directory": "patches"
+  },
+  "overlays": {
+    "directory": "src/firefox"
+  },
+  "features": {
+    "preset": "custom",
+    "selected": [
+      "pocket",
+      "studies",
+      "telemetry-upload",
+      "firefox-accounts",
+      "screenshots"
+    ]
+  },
+  "build": {
+    "mode": "artifact"
+  },
+  "language": "typescript"
+}

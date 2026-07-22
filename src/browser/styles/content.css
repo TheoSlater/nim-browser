@@ -1,0 +1,5 @@
+@-moz-document url("about:newtab"), url("about:home") {
+  :root {
+    --newtab-primary-action-background: #7c3aed !important;
+  }
+}

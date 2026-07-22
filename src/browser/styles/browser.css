@@ -1,0 +1,16 @@
+:root {
+  --geckokit-accent: #7c3aed;
+}
+
+#PersonalToolbar {
+  display: none;
+}
+
+#navigator-toolbox {
+  border-bottom: 2px solid var(--geckokit-accent) !important;
+}
+
+#TabsToolbar,
+#nav-bar {
+  box-shadow: none !important;
+}
