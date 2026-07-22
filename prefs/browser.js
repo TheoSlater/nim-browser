@@ -11,6 +11,11 @@ pref("browser.shell.checkDefaultBrowser", false);
 pref("browser.crashReports.unsubmittedCheck.enabled", false);
 pref("browser.preferences.moreFromMozilla", false);
 
+// Native vertical tabs by default; users can switch back in sidebar settings.
+pref("sidebar.revamp", true);
+pref("sidebar.verticalTabs", true);
+pref("sidebar.visibility", "always-show");
+
 // No newtab content feeds, sponsored content, or promos.
 pref("browser.newtabpage.activity-stream.discoverystream.enabled", false);
 pref("browser.newtabpage.activity-stream.showSponsored", false);
@@ -30,6 +35,22 @@ pref("dom.ipc.processPrelaunch.fission.number", 0);
 pref("dom.ipc.keepProcessesAlive.privilegedabout", 0);
 pref("browser.tabs.unloadOnLowMemory", true);
 pref("browser.tabs.min_inactive_duration_before_unload", 300000);
+pref("browser.cache.memory.capacity", 65536);
+pref("media.memory_caches_combined_limit_kb", 131072);
+
+// Reduce session bookkeeping and defer inactive pinned tabs after restart.
+pref("browser.sessionstore.interval", 60000);
+pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
+pref("browser.sessionstore.max_tabs_undo", 10);
+pref("browser.sessionstore.max_windows_undo", 3);
+pref("browser.sessionstore.max_serialize_forward", 3);
+
+// Avoid speculative background connections and prefetching.
+pref("network.prefetch-next", false);
+pref("network.dns.disablePrefetch", true);
+pref("network.http.speculative-parallel-limit", 0);
+pref("browser.urlbar.speculativeConnect.enabled", false);
+pref("browser.places.speculativeConnect.enabled", false);
 
 // No Mozilla-fed suggestions, experiments, popups, or promos.
 pref("browser.discovery.enabled", false);
