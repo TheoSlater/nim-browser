@@ -1,0 +1,21 @@
+diff --git a/browser/installer/package-manifest.in b/browser/installer/package-manifest.in
+index 203811a0fb..9a26f7c7f1 100644
+--- a/browser/installer/package-manifest.in
++++ b/browser/installer/package-manifest.in
+@@ -185,7 +185,6 @@
+ @BINPATH@/@DLL_PREFIX@gkcodecs@DLL_SUFFIX@
+ @BINPATH@/@DLL_PREFIX@mozavutil@DLL_SUFFIX@
+ @BINPATH@/@DLL_PREFIX@mozavcodec@DLL_SUFFIX@
+-@BINPATH@/@DLL_PREFIX@mozinference@DLL_SUFFIX@
+ 
+ ; [Components]
+ #ifdef ACCESSIBILITY
+@@ -463,3 +462,8 @@ bin/libfreebl_64int_3.so
+ #if defined(BUILT_BY_MOZILLA)
+ @RESPATH@/distribution/*
+ #endif
++
++; GeckoKit packaged UI
++@RESPATH@/defaults/pref/autoconfig.js
++@RESPATH@/geckokit.cfg
++@RESPATH@/geckokit/*

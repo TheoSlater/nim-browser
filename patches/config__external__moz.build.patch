@@ -1,0 +1,14 @@
+diff --git a/config/external/moz.build b/config/external/moz.build
+index 9613533532..d52feabfcd 100644
+--- a/config/external/moz.build
++++ b/config/external/moz.build
+@@ -11,9 +11,6 @@ DIRS += [
+     "sqlite",
+ ]
+ 
+-if CONFIG["MOZ_WIDGET_TOOLKIT"] != "android":
+-    DIRS += ["mozinference"]
+-
+ if CONFIG["MOZ_USING_WASM_SANDBOXING"]:
+     DIRS += [
+         "rlbox_wasm2c_sandbox",
